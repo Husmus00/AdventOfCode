@@ -63,6 +63,9 @@ Your seat wasn't at the very front or back, though; the seats with IDs +1 and -1
 What is the ID of your seat?
 """
 
+# As a quick note, this is a terrible solution. If I understood binary space partitioning I'd have come up with
+# something much better
+
 # Part 1
 
 with open("input.txt") as input_file:
