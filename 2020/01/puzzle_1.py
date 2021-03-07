@@ -48,8 +48,6 @@ with open("input.txt") as input_file:
         numbers[index] = int(numbers[index].replace("\n", ""))
         index = index + 1
 
-print(numbers)
-
 found = False  # in order to break from the while loop when found
 tested = 0  # the number of entries tested
 first_number = 0
@@ -59,8 +57,6 @@ result_multiplied = 0
 while tested < len(numbers) and found is False:
     entry_to_test = numbers[tested]
     index = 0
-
-    print(tested)
 
     for n in numbers:
         addition = entry_to_test + numbers[index]
@@ -76,5 +72,3 @@ while tested < len(numbers) and found is False:
 
 print(first_number + second_number)
 print(str(first_number) + " * " + str(second_number) + " = " + str(result_multiplied))
-
-

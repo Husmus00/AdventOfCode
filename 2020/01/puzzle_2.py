@@ -21,8 +21,6 @@ with open("input.txt") as input_file:
         numbers[index] = int(numbers[index].replace("\n", ""))
         index = index + 1
 
-print(numbers)
-
 found = False  # in order to break from the while loop when found
 tested = 0  # the number of entries tested
 first_number = 0
@@ -60,7 +58,7 @@ while not found and tested < len(numbers):
 
             addition = entry_one + entry_two + entry_three
 
-            print("At {0}, {1}, {2} : {3}".format(tested, index_two, index_three, addition))
+            # print("At {0}, {1}, {2} : {3}".format(tested, index_two, index_three, addition))
 
             if addition == 2020:
                 print("FOUND")
