@@ -61,6 +61,6 @@ for i in input:
     unique_letter_sum = len(unique_letter_list)
     count_sum += unique_letter_sum
 
-# One-line answer:
+# Single-line answer:
 # count_sum = sum(list(map(lambda x: len(set(x)), input)))
 print(count_sum)
